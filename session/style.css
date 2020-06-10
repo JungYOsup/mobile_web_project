@@ -1,0 +1,38 @@
+@import url("/root.css");
+@import url("/reset.css");
+
+#session {
+  width: 100%;
+  height: 100%;
+}
+
+/* header */
+.session__header {
+  justify-content: space-between;
+}
+
+article {
+  text-align: center;
+  border-bottom: 1px solid var(--color-light-grey);
+  padding-bottom: 30px;
+}
+
+/* main */
+.session__inform,
+.session__title,
+.session__course,
+.session__schedules {
+  padding: 20px 0px;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+.session__title span {
+  color: var(--color-light-grey);
+}
+
+.session__course {
+  display: flex;
+}
+.session__course h4 {
+  flex: 0 0 20%;
+}

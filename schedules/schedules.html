@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script defer src="schedules.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="schedules">
+      <h1 class="rd-only">schedules</h1>
+      <header class="schedules__header">
+        <a href="http://127.0.0.1:5500/index/index.html">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="#"><h3>Schedules</h3></a>
+        <a href="#">
+          <img src="/imgs/user.png" alt="user" />
+        </a>
+      </header>
+
+      <!-- article 나중에 div로 바꾸자 -->
+      <article class="schedules__title">
+        <!-- <h3>Thomas님.</h3> -->
+        <h2>새롭게 아침을 깨워보세요!</h2>
+      </article>
+
+      <main class="schedules__main">
+        <div class="schedules__days">
+          <!-- 자바스크립트로 현재 날짜를 값 넣어야겟다. -->
+
+          <span>26/05/2020</span>
+        </div>
+        <div class="schedules__date">
+          <ul></ul>
+        </div>
+
+        <!-- 각 날짜마다 HTML을 분리해서 작업할수 있을까? 
+        그리고 자바스크립트로 현재 날짜값에 active 하게 만들어야하겟다.-->
+        <div class="schedules__box">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  class="item"
+                  href="http://127.0.0.1:5500/session/session.html"
+                >
+                  <div>
+                    <h4>새벽을 깨우는 요가1</h4>
+                    <span>AM 6:10-7:20</span>
+                    <span>참가인원: 7/8명</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

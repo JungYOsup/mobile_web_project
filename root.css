@@ -1,0 +1,52 @@
+/* Global */
+:root {
+  /* Color */
+
+  --color-white: #ffffff;
+
+  --color-light-white: #eeeeee;
+
+  --color-dark-white: #bdbdbd;
+
+  --color-pink: #fe918d;
+
+  --color-dark-pink: #ff6863;
+
+  --color-dark-grey: #4d4d4d;
+
+  --color-grey: #c4c4c4;
+
+  --color-light-grey: #7c7979;
+
+  --color-blue: #73aace;
+
+  --color-yellow: #fff7d1;
+
+  --color-orange: #feb546;
+
+  --color-black: #222222;
+
+  --color-black-dark: #333333;
+
+  /*  Body fonts should be about 16px */
+
+  /* font-size */
+
+  --font-large: 1.5em;
+  /* 24px */
+  --font-medium: 1.3em;
+  /* 18px */
+  --font-regular: 1.1em;
+  /* transition time */
+  --font-minumum: 0.9em;
+
+  --animation-time: 300ms;
+
+  /* Font weight */
+
+  --weight-bold: 700;
+
+  --weight-semi-bold: 600;
+
+  --weight-regular: 400;
+}
