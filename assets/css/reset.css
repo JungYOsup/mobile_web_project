@@ -24,6 +24,12 @@ body {
   font-family: "Nunito Sans", sans-serif;
   /* futura pt 는 유료,  비슷한 폰트 사용*/
   cursor: default;
+  overflow-y: hidden;
+  /* 스크롤바 없애기 */
+  overflow-x: hidden;
+  /* 스크롤바 없애기 */
+  /* 스크롤은 없어지는데 그 기능을 못한다.
+  css scrollbar remove  */
 }
 
 a {

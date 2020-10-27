@@ -1,33 +1,63 @@
 "use strict";
 
-let schedule_arr = {
+let schedule_obj = {
   sunday: {
     1: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가1",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     2: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가2",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     3: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가3",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     4: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가4",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     5: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
+      title: "새벽을 깨우는 요가5",
+      time: "AM 6:10-7:20",
+      attend: "7/8명",
+    },
+    6: {
+      url: "http://127.0.0.1:5500/pages/session.html",
+      title: "새벽을 깨우는 요가5",
+      time: "AM 6:10-7:20",
+      attend: "7/8명",
+    },
+    7: {
+      url: "http://127.0.0.1:5500/pages/session.html",
+      title: "새벽을 깨우는 요가5",
+      time: "AM 6:10-7:20",
+      attend: "7/8명",
+    },
+    8: {
+      url: "http://127.0.0.1:5500/pages/session.html",
+      title: "새벽을 깨우는 요가5",
+      time: "AM 6:10-7:20",
+      attend: "7/8명",
+    },
+    9: {
+      url: "http://127.0.0.1:5500/pages/session.html",
+      title: "새벽을 깨우는 요가5",
+      time: "AM 6:10-7:20",
+      attend: "7/8명",
+    },
+    10: {
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가5",
       time: "AM 6:10-7:20",
       attend: "7/8명",
@@ -36,25 +66,25 @@ let schedule_arr = {
 
   monday: {
     1: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가2",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     2: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가3",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     3: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가4",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     4: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가5",
       time: "AM 6:10-7:20",
       attend: "7/8명",
@@ -63,25 +93,25 @@ let schedule_arr = {
 
   tuesday: {
     1: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "화요일 깨우는 요가1",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     2: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "화요일 깨우는 요가2",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     3: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "화요일  깨우는 요가3",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     4: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "화요일 깨우는 요가4",
       time: "AM 6:10-7:20",
       attend: "7/8명",
@@ -90,25 +120,25 @@ let schedule_arr = {
 
   wednesday: {
     1: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가1",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     2: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가2",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     3: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가3",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     4: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가4",
       time: "AM 6:10-7:20",
       attend: " 7/8명",
@@ -117,25 +147,25 @@ let schedule_arr = {
 
   thursday: {
     1: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가1",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     2: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가2",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     3: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가3",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     4: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가4",
       time: "AM 6:10-7:20",
       attend: "7/8명",
@@ -144,25 +174,25 @@ let schedule_arr = {
 
   friday: {
     1: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가1",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     2: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가2",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     3: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가3",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     4: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가4",
       time: "AM 6:10-7:20",
       attend: "7/8명",
@@ -171,25 +201,25 @@ let schedule_arr = {
 
   saturday: {
     1: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가1",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     2: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가2",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     3: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가3",
       time: "AM 6:10-7:20",
       attend: "7/8명",
     },
     4: {
-      url: "http://127.0.0.1:5500/session/session.html",
+      url: "http://127.0.0.1:5500/pages/session.html",
       title: "새벽을 깨우는 요가4",
       time: "AM 6:10-7:20",
       attend: "7/8명",
@@ -261,8 +291,8 @@ function setCurrentDate() {
 // Object.keys 는 객체의 키값을 배열로 리턴함
 // 데이터를 밖에로 뺴내는 방법
 
-Object.keys(schedule_arr).forEach((key) => {
-  const temp_obj = schedule_arr[key];
+Object.keys(schedule_obj).forEach((key) => {
+  const temp_obj = schedule_obj[key];
 
   const node = document.querySelector(`.swiper-slide[name=${key}]`);
 
