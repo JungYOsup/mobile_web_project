@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <!-- swiper -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- bootstrap : jquery가 항상 부트스트랩보다 위에 있어야한다.그래야지 오류 안뜨고 적용-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/resource/css/bootstrap.css" />
+    <script
+      type="text/javascript"
+      src="/assets/resource/js/bootstrap.js"
+    ></script>
+    <!-- js,css -->
+    <link rel="stylesheet" href="/assets/css/goals.css" />
+    <script defer src="/assets/javascript/goals.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="goals">
+      <h1 class="rd-only">goals</h1>
+      <header class="goals__header">
+        <a href="/index.html">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="#"><h3>Goals</h3></a>
+        <a href="#">
+          <img src="/assets/img/user.png" alt="user" />
+        </a>
+      </header>
+
+      <article class="goals__switch">
+        <div>
+          <h4>Thomas님</h4>
+          <h3 class="switch__title obj_open">현재 목표</h3>
+          <h3 class="switch__title">과거 목표</h3>
+        </div>
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            class="custom-control-input switch_btn"
+            id="customSwitch1"
+            checked
+          />
+          <label class="custom-control-label" for="customSwitch1">
+            <div>
+              <span class="switch_name">past</span>
+              <span class="switch_name switch_open">current</span>
+            </div>
+          </label>
+        </div>
+      </article>
+
+      <main class="goals__main">
+        <ul class="main__list"></ul>
+      </main>
+    </section>
+  </body>
+</html>

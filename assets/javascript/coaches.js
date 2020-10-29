@@ -21,6 +21,8 @@ let coaches_obj = {
       "동국명상원 명상지도자과정 중",
       "울트라마라톤 120KM 완주경력",
     ],
+
+    position: "Head coach",
   },
 
   b: {
@@ -31,6 +33,7 @@ let coaches_obj = {
 
     certificate: ["한국협회인증", "라이프코치", "abc"],
     career: ["변화전문 아카데미 코칭센터 대표"],
+    position: "Sub coach",
   },
 };
 
@@ -48,9 +51,12 @@ const swiperSlides = document.querySelector(".swiper-slide");
 let html = "";
 
 Object.keys(coaches_obj).forEach((key) => {
-  const a = document.querySelector(`.swiper-slide[name=${key}]`);
+  const key_name = document.querySelector(`.swiper-slide[name=${key}]`);
 
-  const imgNode = `<div class="coaches_img">
+  const titleNode = `<div class="coaches__title">
+  <h4>${coaches_obj[key].position}</h4></div>`;
+
+  const imgNode = `<div class="coaches__img">
   <img src="${coaches_obj[key].img}" alt="img" /></div>`;
 
   const nameNode = `<div class="coaches__name">
@@ -66,9 +72,9 @@ Object.keys(coaches_obj).forEach((key) => {
   <h4>경력</h4>
   <p>${coaches_obj[key].career}</p></div>`;
 
-  const node = `<div class="item">${imgNode}${nameNode}${informNode}${skillNode}${careerNode}</div>`;
+  const node = `<div class="item">${titleNode}${imgNode}${nameNode}${informNode}${skillNode}${careerNode}</div>`;
 
-  a.innerHTML = node;
+  key_name.innerHTML = node;
 });
 
-// overriding
+// override title

@@ -1,50 +1,39 @@
 @import url("root.css");
 @import url("reset.css");
 
-#coaches {
+#journals {
   width: 100%;
   height: 100%;
 }
 
-.coaches__header {
+.journals__header {
   justify-content: space-between;
   margin-bottom: 50px;
 }
 
-.coaches__title {
+.journals__title {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
-}
-
-.coaches__img {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.coaches__name,
-.coaches__inform,
-.coaches__skill,
-.coaches__career {
-  padding: 10px 0px;
-}
-
-.coaches__skill,
-.coaches__career {
-  display: flex;
-}
-
-.coaches__skill h4 {
-  flex: 1 0 20%;
-  margin-right: 10px;
-}
-
-.coaches__career h4 {
-  flex: 1 0 20%;
 }
 
 .item {
   width: 83%;
   margin: 0 auto;
+}
+.journals__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.journals__content,
+.journals__recommend {
+  line-height: 30px;
+}
+
+.journals__subtitle {
+  margin: 10px 0px;
 }
 
 /* slide  */
