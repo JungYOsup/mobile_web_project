@@ -279,7 +279,9 @@ const convertcurDay = new Intl.DateTimeFormat("en-US", options).format(curDay);
 const listsName = document.querySelectorAll(".schedules__date li");
 
 function setCurrentDate() {
-  fullDay.textContent = `${curDate}/0${curMonth}/${curYear}`;
+
+  
+  fullDay.textContent = `${curDate}/${curMonth}/${curYear}`;
   listsName.forEach((listName) => {
     if (listName.getAttribute("name") === convertcurDay) {
       // 별로 안좋은 코딩인것 같은데..

@@ -8,7 +8,7 @@ let objects = {
   },
   two: {
     state: "past",
-    title: "허리 뒤틀림 교정",
+    title: "코브라 자세",
     date: "complete",
   },
 
@@ -48,15 +48,15 @@ let temp_str = "";
 
 Object.keys(objects).forEach((key) => {
   if (objects[key].state == "current") {
-    const titleNode = `<h2>${objects[key].title}</h2>`;
-    const dateNode = `<span>${objects[key].date}</span>`;
+    const titleNode = `<h3 class="list__title">${objects[key].title}</h3>`;
+    const dateNode = `<span class="list__date">${objects[key].date}</span>`;
 
     temp_str += `<li class="list"><div class="list__box">${titleNode}${dateNode}</div></li>`;
   } else if (objects[key].state == "past") {
-    const titleNode = `<h2>${objects[key].title}</h2>`;
-    const dateNode = `<span>${objects[key].date}</span>`;
+    const titleNode = `<h3 class="list__title">${objects[key].title}</h3>`;
+    const dateNode = `<span class="list__date">${objects[key].date}</span>`;
 
-    temp_str += `<li class="list past"><div class="list__box">${titleNode}${dateNode}</div></li>`;
+    temp_str += `<li class="list list_open"><div class="list__box">${titleNode}${dateNode}</div></li>`;
   }
 
   main__list.innerHTML = temp_str;
@@ -71,6 +71,8 @@ const switch__title = document.querySelectorAll(".switch__title");
 
 const lists = document.querySelectorAll(".list");
 
+const main_footer = document.querySelector(".goals__footer");
+
 switch_btn.addEventListener("click", () => {
   switch_name[0].classList.toggle("switch_open");
   switch_name[1].classList.toggle("switch_open");
@@ -78,6 +80,8 @@ switch_btn.addEventListener("click", () => {
   switch__title[1].classList.toggle("obj_open");
 
   lists.forEach((list) => {
-    list.classList.toggle("past");
+    list.classList.toggle("list_open");
   });
+
+  main_footer.classList.toggle("footer_hide");
 });
